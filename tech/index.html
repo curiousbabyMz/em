@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="title"><h3>你好，庄嘉敏，欢迎使用技术后台系统。</h3></div>
+<div class="row">
+    <div class="left col-8">
+        <div class="news">
+            <!--
+            比如：用户：庄嘉敏
+                    客服组相关记录为出入库记录和故障记录
+                    庄嘉敏名下创建的项目被修改了，生成一条提醒，显示简约信息，可供点击进入查看
+
+            -->
+            显示相关的最新更改的记录
+        </div>
+        <div class="line"></div>
+        <div class="alw">
+            <!--
+            根据用户习惯，列出常用的页面标签，如：故障统计、项目列表、IC卡列表等；
+            按钮3-5个；
+            -->
+            常用页面
+        </div>
+        <div class="line"></div>
+        <div class="add">
+            <!--
+            以下是用户为客服组时，需要的常用功能，为方便使用，建议为按钮加入以下逻辑功能；
+            《新增故障记录》：提取故障统计中“+”的功能；
+            《新增出入库记录》：登记流程为：新增故障记录，生成项目，再转到出入库记录补充出入库信息；建议提取故障统计中“+”的功能，自动勾选是否出库，并在创建按钮按下后跳转到出入库统计页面，待补充出入库信息；
+            《新增物品维修记录》：提取返修统计中“+”的功能，并打开返修统计页面；
+            -->
+            <button onclick="" class="btn btn-default" type="button" name="seradv" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@mdo" title="新增">新增故障记录
+            </button>
+            <button onclick="" class="btn btn-default" type="button" name="seradv" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@mdo" title="新增">新增物品出入库记录
+            </button>
+            <button onclick="" class="btn btn-default" type="button" name="seradv" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@mdo" title="新增">新增物品维修记录
+            </button>
+        </div>
+    </div>
+    <div class="line-y col-1"></div>
+    <div class="col-3">
+        <!--<div class="container">-->
+            <!--<div class="item">C0037-59 温州欧洲城</div>-->
+        <!--</div>-->
+
+
+
+        <div class="count">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
