@@ -1,4 +1,7 @@
 *{margin: 0;padding: 0}
+.container{
+    width: 100vw;
+}
 .desk {
     position: absolute;
     top:0;
@@ -12,4 +15,19 @@
 .title{
     height: 100px;
     background-color: #777777;
+}
+.main{
+    padding: 15px;
+    width: 100%;
+}
+.items{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.item{
+    background: url(star.png) no-repeat;
+    background-size: contain;
+    width: 33.33%;
+    height: 30vh;
 }
