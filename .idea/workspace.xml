@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="officechange for emax">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/2张蓝色璀璨星空背景高清图片下载1_lanrentuku.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/2张蓝色璀璨星空背景高清图片下载2_lanrentuku.com.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/food.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/彩绘食材和菜肴无缝背景矢量素材.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/彩绘食材和菜肴无缝背景矢量素材_lanrentuku.com.eps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/3款彩绘健康食物banner矢量素材_lanrentuku.com.eps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/readme.html" />
+    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/界面.css" afterPath="$PROJECT_DIR$/2.0界面/界面.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/界面.html" afterPath="$PROJECT_DIR$/2.0界面/界面.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +19,8 @@
       <file leaf-file-name="界面.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2.0界面/界面.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -39,8 +29,8 @@
       <file leaf-file-name="界面.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2.0界面/界面.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="231">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -174,7 +164,7 @@
       <workItem from="1511329471588" duration="13063000" />
       <workItem from="1511499994599" duration="102000" />
       <workItem from="1512985473649" duration="4003000" />
-      <workItem from="1513043574269" duration="3710000" />
+      <workItem from="1513043574269" duration="4809000" />
     </task>
     <task id="LOCAL-00001" summary="officechange for emax">
       <created>1512985568666</created>
@@ -190,11 +180,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512989581359</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="officechange for emax">
+      <created>1513066847591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513066847591</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20878000" />
+    <option name="totallyTimeSpent" value="21977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -313,6 +310,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -320,21 +318,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.0界面/界面.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.0界面/界面.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="231">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding />
         </state>
       </provider>
