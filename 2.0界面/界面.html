@@ -6,39 +6,106 @@
     <title>2.0</title>
     <link rel="stylesheet" href="界面.css">
     <script type="text/javascript">
+//        let pub;
+
         function cardAction(a) {
+//            if (a==1){
+//                return;
+//            }
             let t = "1500ms ";
             let m1 = "cardin ";
             let m2 = "infoin ";
-            a.style.animation = m1 + t + "forwards";
-            a.nextSibling.nextSibling.style.animation = m2 + t + "forwards";
-//            var tout=setTimeout("a.style.animation=''")
+            let card = a.nextElementSibling;
+            let lpic = a.nextElementSibling.nextElementSibling;
+            let ff = a.parentNode.parentNode;
+
+            card.style.animation = m1 + t + "forwards";
+            lpic.style.animation = m2 + t + "forwards";
+            for (let i = 0; i < ff.childNodes.length; i++) {
+                if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
+                    ff.childNodes[i].childNodes[3].style.animation = "elseout 1s forwards";
+                }
+            }
         }
 
         function cardAction2(a) {
+//            if (a==1){
+//                return;
+//            }
             let t = "1500ms ";
             let m1 = "cardout ";
             let m2 = "infoout ";
-            a.style.animation = m1 + t + "forwards";
-            a.nextSibling.nextSibling.style.animation = m2 + t + "forwards";
-//            var tout=setTimeout("a.style.animation=''")
+            let card = a.nextElementSibling;
+            let lpic = a.nextElementSibling.nextElementSibling;
+            let ff = a.parentNode.parentNode;
+
+            card.style.animation = m1 + t + "forwards";
+            lpic.style.animation = m2 + t + "forwards";
+            for (let i = 0; i < ff.childNodes.length; i++) {
+                if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
+                    ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
+                }
+            }
+        }
+
+        function start(a) {
+
+            a.style.animation = "start 1.8s forwards";
+            a.firstElementChild.nextElementSibling.nextElementSibling.style.display = "none";
+//            a.nextElementSibling.style.animation="ininfo 1.8s forwards";
         }
     </script>
+
 </head>
 <body>
 <div class="container">
     <div class="title"></div>
     <div class="main">
         <div class="items">
+            <div class="item" onclick="start(this)">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
+                    <div class="Spic sbg1"></div>
+                    <div class="Spicb"></div>
+                </div>
+                <div class="Lpic lbg1"></div>
+                <div class="Lpic xlbg1"></div>
+            </div>
             <div class="item">
-                <div class="card" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
+                    <div class="Spic sbg2"></div>
+                    <div class="Spicb"></div>
+                </div>
+                <div class="Lpic lbg2"></div>
+            </div>
+            <div class="item">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
+                    <div class="Spic sbg3"></div>
+                    <div class="Spicb"></div>
+                </div>
+                <div class="Lpic lbg3"></div>
+            </div>
+            <div class="item">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
+                    <div class="Spic sbg2"></div>
+                    <div class="Spicb"></div>
+                </div>
+                <div class="Lpic lbg2"></div>
+            </div>
+            <div class="item">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
                     <div class="Spic sbg1"></div>
                     <div class="Spicb"></div>
                 </div>
                 <div class="Lpic lbg1"></div>
             </div>
             <div class="item">
-                <div class="card" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)">
+                <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
+                <div class="card">
                     <div class="Spic sbg2"></div>
                     <div class="Spicb"></div>
                 </div>
