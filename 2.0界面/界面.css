@@ -62,8 +62,8 @@
     width: inherit;
     height: inherit;
     transform-style: preserve-3d;
-    border: 5px solid #4a4949;
-    border-radius: 5px;
+    /*border: 5px solid #4a4949;*/
+    /*border-radius: 5px;*/
     box-shadow: rgba(0, 0, 0, 0.64) 0 8px 15px 5px;
     /*z-index: -2;*/
 }
@@ -74,13 +74,13 @@
     height: 100%;
     background-origin: padding-box;
     /*z-index: -3;*/
-    /*border: 1px solid #383737;*/
-    /*box-shadow: rgba(255, 255, 255, 0.5) 0px 8px 25px 5px;*/
+    border-radius: 5px;
 }
 
 .Spicb {
     position: absolute;
     z-index: -4;
+    border-radius: 5px;
     background: url(EMax1.png) no-repeat padding-box;
     background-size: cover;
     width: 100%;
