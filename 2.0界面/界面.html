@@ -51,8 +51,12 @@
                     ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
                 }
             }
-            a.firstElementChild.setAttribute("onmouseenter","cardAction(this)");
-            a.firstElementChild.setAttribute("onmouseleave","cardAction2(this)");
+            setTimeout(reset,1800);
+            function reset() {
+                a.firstElementChild.setAttribute("onmouseenter","cardAction(this)");
+                a.firstElementChild.setAttribute("onmouseleave","cardAction2(this)");
+            }
+
 //            a.lastElementChild.previousElementSibling.style.display = "none";
 //            a.lastElementChild.style.animation="ininfo 3s forwards";
         }
