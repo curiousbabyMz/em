@@ -48,14 +48,19 @@
         }
 
         function start(a) {
-            a.firstElementChild.nextElementSibling.style.animation = "start 1.8s forwards";
-            a.lastElementChild.previousElementSibling.style.display = "none";
-//            for (let i = 0; i < a.parentNode.childNodes.length; i++) {
-//                if (a.parentNode.childNodes[i].tagName == "DIV" && a.parentNode.childNodes[i] !== a) {
-//                    a.parentNode.childNodes[i].style.animation = "elsein 1s forwards";
-//                }
-//            }
-            a.lastElementChild.style.animation="ininfo 3s forwards";
+            a.firstElementChild.removeAttribute("onmouseenter");
+            a.firstElementChild.removeAttribute("onmouseleave");
+            a.firstElementChild.nextElementSibling.style.animation = "start 1.8s";
+            let ff = a.parentNode;
+            for (let i = 0; i < ff.childNodes.length; i++) {
+                if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
+                    ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
+                }
+            }
+            a.firstElementChild.setAttribute("onmouseenter","cardAction(this)");
+            a.firstElementChild.setAttribute("onmouseleave","cardAction2(this)");
+//            a.lastElementChild.previousElementSibling.style.display = "none";
+//            a.lastElementChild.style.animation="ininfo 3s forwards";
         }
     </script>
 
@@ -74,7 +79,7 @@
                 <div class="Lpic lbg1"></div>
                 <div class="Lpic xlbg1"></div>
             </div>
-            <div class="item">
+            <div class="item"  onclick="start(this)">
                 <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
                 <div class="card">
                     <div class="Spic sbg2"></div>
@@ -82,7 +87,7 @@
                 </div>
                 <div class="Lpic lbg2"></div>
             </div>
-            <div class="item">
+            <div class="item"  onclick="start(this)">
                 <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
                 <div class="card">
                     <div class="Spic sbg3"></div>
@@ -90,7 +95,7 @@
                 </div>
                 <div class="Lpic lbg3"></div>
             </div>
-            <div class="item">
+            <div class="item"  onclick="start(this)">
                 <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
                 <div class="card">
                     <div class="Spic sbg2"></div>
@@ -98,7 +103,7 @@
                 </div>
                 <div class="Lpic lbg2"></div>
             </div>
-            <div class="item">
+            <div class="item"  onclick="start(this)">
                 <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
                 <div class="card">
                     <div class="Spic sbg1"></div>
@@ -106,7 +111,7 @@
                 </div>
                 <div class="Lpic lbg1"></div>
             </div>
-            <div class="item">
+            <div class="item"  onclick="start(this)">
                 <div class="action" onmouseenter="cardAction(this)" onmouseleave="cardAction2(this)"></div>
                 <div class="card">
                     <div class="Spic sbg2"></div>
