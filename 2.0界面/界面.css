@@ -15,12 +15,14 @@
     width: 100vw;
     height: 100vh;
     z-index: -10;
-    background: black url(blue.png) -500px 0;
+    background: black url(blue.png) -500px 0 fixed;
     background-size: cover;
     filter: brightness(0.4) blur(2px);
 }
 
 .title {
+    text-align: center;
+    font: 600 50px/100px fantasy;
     height: 100px;
     background-color: #777777;
     opacity: 0.2;
@@ -60,6 +62,9 @@
     width: inherit;
     height: inherit;
     transform-style: preserve-3d;
+    border: 5px solid #4a4949;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.64) 0 8px 15px 5px;
     /*z-index: -2;*/
 }
 
@@ -67,19 +72,20 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    background-origin: padding-box;
     /*z-index: -3;*/
-    border: 1px solid #8a8a8a;
-    box-shadow: rgba(238, 238, 238, 0.4) 0 8px 40px 8px;
+    /*border: 1px solid #383737;*/
+    /*box-shadow: rgba(255, 255, 255, 0.5) 0px 8px 25px 5px;*/
 }
 
 .Spicb {
     position: absolute;
     z-index: -4;
-    background: url(EMax1.png) no-repeat;
+    background: url(EMax1.png) no-repeat padding-box;
     background-size: cover;
     width: 100%;
     height: 100%;
-    border: 1px solid #8a8a8a;
+    /*border: 1px solid #8a8a8a;*/
     /*box-shadow: rgba(238, 238, 238, 0.4) 0 0 40px 8px;*/
     transform: rotateY(180deg);
 }
@@ -102,10 +108,11 @@
 }
 
 .lbg1 {
-    background: linear-gradient(60deg, #000 20%, rgba(138, 138, 138, 0)), url(bstar.jpg) no-repeat;
+    background: linear-gradient(140deg, #000 5%, rgba(138, 138, 138, 0)), url(bstar.jpg) no-repeat;
     background-size: cover;
 }
-.xlbg1{
+
+.xlbg1 {
     background: url(xlstar.jpg) no-repeat;
     background-size: cover;
     width: 100vw;
@@ -120,7 +127,7 @@
 }
 
 .lbg2 {
-    background: linear-gradient(180deg, #000 20%, rgba(138, 138, 138, 0)), url(food.png) no-repeat;
+    background: linear-gradient(180deg, #000 5%, rgba(138, 138, 138, 0)), url(food.png) no-repeat;
     background-size: cover;
 }
 
@@ -200,13 +207,18 @@
         opacity: 0;
     }
 }
+
 @keyframes ininfo {
-    0%{
+    0% {
         height: 0;
         opacity: 0;
     }
-    100%{
-        opacity:1;
-        height: inherit;
+    50% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 100vh;
     }
 }

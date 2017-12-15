@@ -6,7 +6,6 @@
     <title>2.0</title>
     <link rel="stylesheet" href="界面.css">
     <script type="text/javascript">
-//        let pub;
 
         function cardAction(a) {
 //            if (a==1){
@@ -49,22 +48,21 @@
         }
 
         function start(a) {
-
-            a.style.animation = "start 1.8s forwards";
-            a.firstElementChild.nextElementSibling.nextElementSibling.style.display = "none";
-            for (let i = 0; i < a.parentNode.childNodes.length; i++) {
-                if (a.parentNode.childNodes[i].tagName == "DIV" && a.parentNode.childNodes[i] !== a.parentNode) {
-                    a.parentNode.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
-                }
-            }
-//            a.nextElementSibling.style.animation="ininfo 1.8s forwards";
+            a.firstElementChild.nextElementSibling.style.animation = "start 1.8s forwards";
+            a.lastElementChild.previousElementSibling.style.display = "none";
+//            for (let i = 0; i < a.parentNode.childNodes.length; i++) {
+//                if (a.parentNode.childNodes[i].tagName == "DIV" && a.parentNode.childNodes[i] !== a) {
+//                    a.parentNode.childNodes[i].style.animation = "elsein 1s forwards";
+//                }
+//            }
+            a.lastElementChild.style.animation="ininfo 1.8s forwards";
         }
     </script>
 
 </head>
 <body>
 <div class="container">
-    <div class="title"></div>
+    <div class="title">Emax</div>
     <div class="main">
         <div class="items">
             <div class="item" onclick="start(this)">
