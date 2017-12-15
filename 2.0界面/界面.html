@@ -52,6 +52,11 @@
 
             a.style.animation = "start 1.8s forwards";
             a.firstElementChild.nextElementSibling.nextElementSibling.style.display = "none";
+            for (let i = 0; i < a.parentNode.childNodes.length; i++) {
+                if (a.parentNode.childNodes[i].tagName == "DIV" && a.parentNode.childNodes[i] !== a.parentNode) {
+                    a.parentNode.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
+                }
+            }
 //            a.nextElementSibling.style.animation="ininfo 1.8s forwards";
         }
     </script>
