@@ -42,16 +42,17 @@
         }
 
         function start(a) {
+            let t="1800";
             a.firstElementChild.removeAttribute("onmouseenter");
             a.firstElementChild.removeAttribute("onmouseleave");
-            a.firstElementChild.nextElementSibling.style.animation = "start 1.8s";
+            a.firstElementChild.nextElementSibling.style.animation = "start "+t+"ms";
             let ff = a.parentNode;
             for (let i = 0; i < ff.childNodes.length; i++) {
                 if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
                     ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
                 }
             }
-            setTimeout(reset,1800);
+            setTimeout(reset,t);
             function reset() {
                 a.firstElementChild.setAttribute("onmouseenter","cardAction(this)");
                 a.firstElementChild.setAttribute("onmouseleave","cardAction2(this)");
