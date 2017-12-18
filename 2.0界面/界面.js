@@ -37,6 +37,7 @@ function start(a) {
     a.firstElementChild.removeAttribute("onmouseenter");
     a.firstElementChild.removeAttribute("onmouseleave");
     a.firstElementChild.nextElementSibling.style.animation = "start " + t + "ms";
+    a.lastElementChild.previousElementSibling.style.animation="infoout 1.5s forwards";
     let ff = a.parentNode;
     for (let i = 0; i < ff.childNodes.length; i++) {
         if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
@@ -48,6 +49,7 @@ function start(a) {
     function reset() {
         a.firstElementChild.setAttribute("onmouseenter", "cardAction(this)");
         a.firstElementChild.setAttribute("onmouseleave", "cardAction2(this)");
+
     }
 
 //            a.lastElementChild.previousElementSibling.style.display = "none";
