@@ -39,8 +39,8 @@
 .items {
     box-sizing: content-box;
     /*position: absolute;*/
-    width: 100vw;
-    margin: 5px 0;
+    /*width: 100vw;*/
+    margin: 5px 100px;
     padding: 5px 0;
 }
 
