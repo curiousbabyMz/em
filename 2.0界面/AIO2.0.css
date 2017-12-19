@@ -166,6 +166,18 @@
 }
 /*endregion*/
 
+@keyframes clickcard {
+    0%{
+
+    }
+    50%{
+        transform: rotateY(360deg) translate(0,10px);
+    }
+    100%{
+        transform: rotateY(360deg) translate(0,10px) scale(1.5);
+        opacity: 0;
+    }
+}
 @keyframes infoin {
     0% {
         opacity: 0
@@ -231,20 +243,20 @@
     }
 }
 
-@keyframes ininfo {
-    0% {
-        height: 0;
-        opacity: 0;
-    }
-    50% {
-        height: 0;
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        height: 100vh;
-    }
-}
+/*@keyframes ininfo {*/
+    /*0% {*/
+        /*height: 0;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*50% {*/
+        /*height: 0;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100% {*/
+        /*opacity: 1;*/
+        /*height: 100vh;*/
+    /*}*/
+/*}*/
 
 /*region 下一页*/
 @keyframes npagein {

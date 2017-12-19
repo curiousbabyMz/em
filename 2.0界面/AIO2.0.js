@@ -1,56 +1,62 @@
-function cardAction(a) {     //鼠标移入
-    let t = "1500ms ";
-    let m1 = "cardin ";
-    let m2 = "infoin ";
-    let card = a.nextElementSibling;
-    let lpic = a.nextElementSibling.nextElementSibling;
-    let ff = a.parentNode.parentNode;
+// function cardAction(a) {     //鼠标移入
+//     let t = "1500ms ";
+//     let m1 = "cardin ";
+//     let m2 = "infoin ";
+//     let card = a.nextElementSibling;
+//     let lpic = a.nextElementSibling.nextElementSibling;
+//     let ff = a.parentNode.parentNode;
+//
+//     card.style.animation = m1 + t + "forwards";
+//     lpic.style.animation = m2 + t + "forwards";
+//     for (let i = 0; i < ff.childNodes.length; i++) {
+//         if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
+//             ff.childNodes[i].childNodes[3].style.animation = "elseout 1s forwards";
+//         }
+//     }
+// }
+//
+// function cardAction2(a) {    //鼠标移出
+//     let t = "1500ms ";
+//     let m1 = "cardout ";
+//     let m2 = "infoout ";
+//     let card = a.nextElementSibling;
+//     let lpic = a.nextElementSibling.nextElementSibling;
+//     let ff = a.parentNode.parentNode;
+//
+//     card.style.animation = m1 + t + "forwards";
+//     lpic.style.animation = m2 + t + "forwards";
+//     for (let i = 0; i < ff.childNodes.length; i++) {
+//         if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
+//             ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
+//         }
+//     }
+// }
 
-    card.style.animation = m1 + t + "forwards";
-    lpic.style.animation = m2 + t + "forwards";
+function start(a) {    //单项打开
+    let t = "2000";
+    let ff=a.parentNode;
+    // a.firstElementChild.removeAttribute("onmouseenter");
+    // a.firstElementChild.removeAttribute("onmouseleave");
+    a.firstElementChild.nextElementSibling.style.animation = "clickcard "+t+"ms forwards";
+    a.lastElementChild.previousElementSibling.style.animation = "infoin "+t+"ms "+t/2+"ms forwards";
     for (let i = 0; i < ff.childNodes.length; i++) {
-        if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
+        if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
             ff.childNodes[i].childNodes[3].style.animation = "elseout 1s forwards";
         }
     }
-}
+    // let ff = a.parentNode;
+    // for (let i = 0; i < ff.childNodes.length; i++) {
+    //     if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
+    //         ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
+    //     }
+    // }
+    // setTimeout(function reset() {
+    //     a.firstElementChild.setAttribute("onmouseenter", "cardAction(this)");
+    //     a.firstElementChild.setAttribute("onmouseleave", "cardAction2(this)");
+    //
+    // }, t);
 
-function cardAction2(a) {    //鼠标移出
-    let t = "1500ms ";
-    let m1 = "cardout ";
-    let m2 = "infoout ";
-    let card = a.nextElementSibling;
-    let lpic = a.nextElementSibling.nextElementSibling;
-    let ff = a.parentNode.parentNode;
 
-    card.style.animation = m1 + t + "forwards";
-    lpic.style.animation = m2 + t + "forwards";
-    for (let i = 0; i < ff.childNodes.length; i++) {
-        if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a.parentNode) {
-            ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
-        }
-    }
-}
-
-function start(a) {    //单项打开
-    let t = "1800";
-    a.firstElementChild.removeAttribute("onmouseenter");
-    a.firstElementChild.removeAttribute("onmouseleave");
-    a.firstElementChild.nextElementSibling.style.animation = "start " + t + "ms";
-    a.lastElementChild.previousElementSibling.style.animation = "infoout 1.5s forwards";
-    let ff = a.parentNode;
-    for (let i = 0; i < ff.childNodes.length; i++) {
-        if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
-            ff.childNodes[i].childNodes[3].style.animation = "elsein 1s forwards";
-        }
-    }
-    setTimeout(reset, t);
-
-    function reset() {
-        a.firstElementChild.setAttribute("onmouseenter", "cardAction(this)");
-        a.firstElementChild.setAttribute("onmouseleave", "cardAction2(this)");
-
-    }
 
 }
 
