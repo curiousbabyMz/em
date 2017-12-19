@@ -249,24 +249,27 @@
 /*region 下一页*/
 @keyframes npagein {
     0%{
-        position: absolute;
-        left: 100vw;
+        /*position: absolute;*/
+        /*left: 100vw;*/
+        transform: translate(100vw,0);
     }
     100%{
-        position: absolute;
-        left: 0;
+        /*position: absolute;*/
+        /*left: 0;*/
+        transform: translate(0,0);
     }
 }
 @keyframes npageout {
     0%{
-        position: absolute;
-        left: 0;
+        /*position: absolute;*/
+        /*left: 0;*/
     }
-    99%{width: inherit}
+    /*99%{width: inherit}*/
     100%{
-        width: 0;
-        position: absolute;
-        left: -150vw;
+        /*width: 0;*/
+        /*position: absolute;*/
+        /*left: -100vw;*/
+        transform: translate(-100vw,0);
     }
 }
 /*endregion*/
