@@ -34,16 +34,18 @@
 
 function start(a) {    //单项打开
     let t = "2000";
-    let ff=a.parentNode;
+    let ff = a.parentNode;
     // a.firstElementChild.removeAttribute("onmouseenter");
     // a.firstElementChild.removeAttribute("onmouseleave");
-    a.firstElementChild.nextElementSibling.style.animation = "clickcard "+t+"ms forwards";
-    a.lastElementChild.previousElementSibling.style.animation = "infoin "+t+"ms "+t/2+"ms forwards";
+    a.firstElementChild.nextElementSibling.style.animation = "clickcard " + t + "ms forwards";
+    a.lastElementChild.previousElementSibling.style.animation = "infoin " + t + "ms " + t / 2 + "ms forwards";
     for (let i = 0; i < ff.childNodes.length; i++) {
         if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
             ff.childNodes[i].childNodes[3].style.animation = "elseout 1s forwards";
         }
     }
+    document.getElementsByClassName("arrowl")[0].style.animation = "elseout 1s forwards";
+    document.getElementsByClassName("arrowr")[0].style.animation = "elseout 1s forwards";
     // let ff = a.parentNode;
     // for (let i = 0; i < ff.childNodes.length; i++) {
     //     if (ff.childNodes[i].tagName == "DIV" && ff.childNodes[i] !== a) {
@@ -56,9 +58,27 @@ function start(a) {    //单项打开
     //
     // }, t);
 
-
-
 }
+
+function Back() {
+    let allpage = document.getElementsByClassName("items");
+    let lpic=document.getElementsByClassName("Lpic");
+    for (let i = 0; i < allpage.length; i++) {
+        if (allpage[i].style.display != "none") {
+            for (let j = 0; j < allpage[i].childNodes.length; j++) {
+                if (allpage[i].childNodes[j].tagName == "DIV" && allpage[i].childNodes[j] !== allpage[i]) {
+                    allpage[i].childNodes[j].childNodes[3].style.animation = "elsein 1s forwards";
+                }
+            }
+            document.getElementsByClassName("arrowl")[0].style.animation = "elsein 1s forwards";
+            document.getElementsByClassName("arrowr")[0].style.animation = "elsein 1s forwards";
+        }
+    }
+    for (let i=0;i<lpic.length;i++){
+            lpic[i].style.animation="infoout 1s forwards";
+    }
+}
+
 
 function nextpage() {    //下翻页
     let allpage = document.getElementsByClassName("items");
@@ -80,12 +100,12 @@ function nextpage() {    //下翻页
                 allpage[i + 1].style.display = "";
                 allpage[i + 1].style.animation = "npagein " + t + "ms";
                 // b = true;
-            },t);
+            }, t);
             // console.log(allpage[i]);
             a++;
-            setTimeout(function(){
+            setTimeout(function () {
                 adjust("set");
-            },t*2);
+            }, t * 2);
         }
 
         if (a == 1) {
@@ -118,9 +138,9 @@ function previouspage() {    //上翻页
             // console.log(allpage[i]);
             a++;
 
-            setTimeout(function(){
+            setTimeout(function () {
                 adjust("set");
-            },t*2);
+            }, t * 2);
         }
         if (a == 1) {
 
@@ -129,8 +149,9 @@ function previouspage() {    //上翻页
     }
 }
 
-var adjust = function adjustAction(a) {
-    var action = document.getElementsByClassName("action");
+let adjust;
+adjust = function adjustAction(a) {
+    let action = document.getElementsByClassName("action");
 
     function setAction() {
         for (let i = 0; i < action.length; i++) {
@@ -156,4 +177,4 @@ var adjust = function adjustAction(a) {
             // alert("done2");
             return setAction();
     }
-}
+};
