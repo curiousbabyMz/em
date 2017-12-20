@@ -1,41 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="officechange for emax">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/3款彩绘健康食物banner矢量素材.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/3款彩绘健康食物banner矢量素材_lanrentuku.com.eps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/729daa9754071628de0442108962f613.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/EMax.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/EMax1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/EMax壁纸 1980X1280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/blue1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/bstar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/food.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/food_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/food_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/food_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/gray.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/p.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/paper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/party.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/star1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/tiw358a0208.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/xlstar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/彩绘食材和菜肴无缝背景矢量素材.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/彩绘食材和菜肴无缝背景矢量素材_lanrentuku.com.eps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/1512975203(1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/151331231321321321232.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/1513319083(1222.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/1513319083(1222.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/plan_50_.png.thumb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/shot_vpn_50_.png.thumb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面素材/weed_50_.png.thumb.jpg" afterPath="" />
+    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.css" afterPath="$PROJECT_DIR$/2.0界面/AIO2.0.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.html" afterPath="$PROJECT_DIR$/2.0界面/AIO2.0.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.js" afterPath="$PROJECT_DIR$/2.0界面/AIO2.0.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -95,8 +63,8 @@
       <file leaf-file-name="AIO2.0.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="124" column="12" lean-forward="false" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+            <state relative-caret-position="710">
+              <caret line="119" column="14" lean-forward="false" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -107,8 +75,8 @@
       <file leaf-file-name="AIO2.0.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="201" column="21" lean-forward="true" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="176" column="11" lean-forward="false" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -157,8 +125,8 @@
         <option value="$PROJECT_DIR$/2.0界面/2.0.js" />
         <option value="$PROJECT_DIR$/2.0界面/界面.js" />
         <option value="$PROJECT_DIR$/2.0界面/AIO2.0.html" />
-        <option value="$PROJECT_DIR$/2.0界面/AIO2.0.css" />
         <option value="$PROJECT_DIR$/2.0界面/AIO2.0.js" />
+        <option value="$PROJECT_DIR$/2.0界面/AIO2.0.css" />
       </list>
     </option>
   </component>
@@ -269,7 +237,7 @@
       <workItem from="1513584670248" duration="9307000" />
       <workItem from="1513657915320" duration="19107000" />
       <workItem from="1513739673385" duration="2431000" />
-      <workItem from="1513748394727" duration="9144000" />
+      <workItem from="1513748394727" duration="10392000" />
     </task>
     <task id="LOCAL-00001" summary="officechange for emax">
       <created>1512985568666</created>
@@ -446,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513680323140</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="officechange for emax">
+      <created>1513762601118</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1513762601118</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112338000" />
+    <option name="totallyTimeSpent" value="113586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,9 +439,9 @@
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2527115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2527115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32632744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -822,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="201" column="21" lean-forward="true" selection-start-line="201" selection-start-column="21" selection-end-line="201" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -870,10 +837,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="176" column="11" lean-forward="false" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="124" column="12" lean-forward="false" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+        <state relative-caret-position="710">
+          <caret line="119" column="14" lean-forward="false" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

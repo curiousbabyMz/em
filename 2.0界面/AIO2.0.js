@@ -60,7 +60,7 @@ function start(a) {    //单项打开
 
 }
 
-function Back() {
+function Back() {   //返回
     let allpage = document.getElementsByClassName("items");
     let lpic=document.getElementsByClassName("Lpic");
     for (let i = 0; i < allpage.length; i++) {
@@ -82,9 +82,8 @@ function Back() {
 
 function nextpage() {    //下翻页
     let allpage = document.getElementsByClassName("items");
-    let t = 2000;
+    let t = 1500;
     for (let i = 0; i < allpage.length; i++) {
-        // var b= false;
         let a = 0;
         if (allpage[i].style.display != "none") {
             adjust("remove");
@@ -97,9 +96,8 @@ function nextpage() {    //下翻页
             allpage[i].style.animation = "npageout " + t + "ms";
             setTimeout(function () {
                 allpage[i].style.display = "none";
-                allpage[i + 1].style.display = "";
+                allpage[i + 1].style.display = "block";
                 allpage[i + 1].style.animation = "npagein " + t + "ms";
-                // b = true;
             }, t);
             // console.log(allpage[i]);
             a++;
@@ -119,7 +117,7 @@ function nextpage() {    //下翻页
 
 function previouspage() {    //上翻页
     let allpage = document.getElementsByClassName("items");
-    let t = 2000;
+    let t = 1500;
     for (let i = 0; i < allpage.length; i++) {
         let a = 0;
         if (allpage[i].style.display != "none") {

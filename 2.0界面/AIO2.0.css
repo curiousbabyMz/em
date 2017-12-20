@@ -49,7 +49,7 @@
 .item {
     /*position: relative;*/
     float: left;
-    margin: 15px 175px;
+    margin: 30px 175px;
     width: 212px;
     /*height: 30vh;*/
     height: 375px;
@@ -153,7 +153,7 @@
     width: 28px;
     height: 46px;
     position: absolute;
-    top: 500px;
+    top: 550px;
     left: 100px;
     z-index: 5;
 }
@@ -163,7 +163,7 @@
     width: 28px;
     height: 46px;
     position: absolute;
-    top: 500px;
+    top: 550px;
     right: 100px;
     z-index: 5;
 }
@@ -174,7 +174,7 @@
     width: 70px;
     height: 50px;
     position: absolute;
-    top: 150px;
+    top: 200px;
     right: 100px;
 }
 
@@ -292,6 +292,7 @@
     0% {
         /*position: absolute;*/
         /*left: 0;*/
+        transform: translate(0, 0);
     }
     /*99%{width: inherit}*/
     100% {
@@ -307,23 +308,19 @@
 /*region 上一页*/
 @keyframes ppagein {
     0% {
-        position: absolute;
-        left: -1920px;
+        transform: translate(-1920px, 0);
     }
     100% {
-        position: absolute;
-        left: 0;
+        transform: translate(0, 0);
     }
 }
 
 @keyframes ppageout {
     0% {
-        position: absolute;
-        left: 0;
+        transform: translate(0, 0);
     }
     100% {
-        position: absolute;
-        left: 1920px;
+        transform: translate(1920px, 0);
     }
 }
 
