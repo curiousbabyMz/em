@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/3款彩绘健康食物banner矢量素材.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/729daa9754071628de0442108962f613.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/EMax.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/EMax1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/EMax壁纸 1980X1280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/back1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/blue1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/bstar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/easyicon_201712200217413561.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/food.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/food_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/food_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/food_05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/gray.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/p.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/paper.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/party.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/return.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/return.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/star1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/tiw358a0208.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/xlstar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/彩绘食材和菜肴无缝背景矢量素材.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/彩绘食材和菜肴无缝背景矢量素材_lanrentuku.com.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/1512975203(1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/151331231321321321232.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/1513319083(1222.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/1513319083(1222.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/plan_50_.png.thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/shot_vpn_50_.png.thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/界面素材/weed_50_.png.thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2.0界面/material/3款彩绘健康食物banner矢量素材_lanrentuku.com.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.css" afterPath="$PROJECT_DIR$/2.0界面/AIO2.0.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.js" afterPath="$PROJECT_DIR$/2.0界面/AIO2.0.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -179,6 +213,12 @@
               <item name="Emax" type="462c0819:PsiDirectoryNode" />
               <item name="2.0界面" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Emax" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Emax" type="462c0819:PsiDirectoryNode" />
+              <item name="2.0界面" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -237,7 +277,7 @@
       <workItem from="1513584670248" duration="9307000" />
       <workItem from="1513657915320" duration="19107000" />
       <workItem from="1513739673385" duration="2431000" />
-      <workItem from="1513748394727" duration="10392000" />
+      <workItem from="1513748394727" duration="10437000" />
     </task>
     <task id="LOCAL-00001" summary="officechange for emax">
       <created>1512985568666</created>
@@ -421,11 +461,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513762601118</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="officechange for emax">
+      <created>1513763847478</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1513763847478</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113586000" />
+    <option name="totallyTimeSpent" value="113631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
