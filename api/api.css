@@ -45,16 +45,17 @@
 [id*=panelin] > .panel > .panel-heading {
     /*background: #7b98b8;*/
     color: #000;
+    line-height: 2.5em;
 }
 
-/*[id*=itemin]>.panel-body{*/
-/*background: rgba(0, 199, 253, 0.1);*/
-/*border: 1px solid #7b98b8;*/
-/*border-bottom-left-radius:5px;*/
-/*border-bottom-right-radius:5px;*/
-/*!*padding-left: 0;*!*/
-/*!*padding-right: 0;*!*/
-/*}*/
+[id*=itemin]>.panel-body{
+background: rgba(0, 199, 253, 0.1);
+border: 1px solid #7b98b8;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+/*padding-left: 0;*/
+/*padding-right: 0;*/
+}
 .name {
     line-height: 50px;
 }
@@ -70,6 +71,11 @@ sup {
     font-size: 20px;
     line-height: 5px;
     padding: 0 10px 5px;
+}
+hr{
+
+    border-top: 1px solid;
+    border-image: linear-gradient(to right,rgba(200, 200, 200, 0), rgb(0, 21, 63) 10%, rgb(0, 21, 63)90%, rgba(200, 200, 200, 0)) 1;
 }
 
 .container:nth-of-type(1) .navbar-form {
