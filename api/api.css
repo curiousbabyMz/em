@@ -1,0 +1,86 @@
+.head {
+    background: rgba(0, 79, 140, 0.8);
+    height: 80px;
+    font: 800 25px/40px "Adobe 黑体 Std R", sans-serif;
+    /*vertical-align: middle;*/
+    color: #fff;
+    padding: 10px 0;
+}
+
+.title {
+    line-height: 60px;
+}
+
+.stitle {
+    /*padding: 5px 0;*/
+    background: #419bd9;
+    border-radius: 10px;
+    margin-right: 5px;
+
+}
+
+.navbar-form .form-control {
+    width: 700px;
+}
+
+.container:nth-of-type(2) {
+    /*font:normal 30px sans-serif;*/
+    margin-top: 200px;
+}
+
+[id*=panelout] > .panel > .panel-heading {
+    background: #3372a3;
+    color: #fff;
+}
+
+[id*=itemout] > .panel-body {
+    background: #f1f1f1;
+    border: 1px solid #3372a3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+[id*=panelin] > .panel > .panel-heading {
+    /*background: #7b98b8;*/
+    color: #000;
+}
+
+/*[id*=itemin]>.panel-body{*/
+/*background: rgba(0, 199, 253, 0.1);*/
+/*border: 1px solid #7b98b8;*/
+/*border-bottom-left-radius:5px;*/
+/*border-bottom-right-radius:5px;*/
+/*!*padding-left: 0;*!*/
+/*!*padding-right: 0;*!*/
+/*}*/
+.name {
+    line-height: 50px;
+}
+
+.h1 {
+    font-size: 60px;
+}
+
+sup {
+    background: #c4cbc9;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 5px;
+    padding: 0 10px 5px;
+}
+
+.container:nth-of-type(1) .navbar-form {
+    vertical-align: top;
+}
+
+.btn, .btn-default, .btn-default:active, .btn-default:hover, .btn-default:visited, .btn-default:focus, .open > .dropdown-toggle.btn-default:hover, .open > .dropdown-toggle.btn-default:active {
+    border: 2px solid #3f6a74;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}

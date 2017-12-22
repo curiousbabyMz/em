@@ -1,0 +1,886 @@
+{
+	"info": {
+		"name": "api",
+		"_postman_id": "e605bd9d-b58c-0d31-17ce-3f2e7f80adcd",
+		"description": "# 使用说明\nAbout use\n\n# Token说明\nabout Token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "用户注册",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY2ODk4MWU2NGQxMDRjMzVhYjFiNTQzMWIwODBkYWRhZWVmNGQyZDViZWJjNDQwZTFmMDgxMWIyNGMyOWM4NmE2YmRhZDgwNGUxNTU5YTdiIn0.eyJhdWQiOiIxIiwianRpIjoiZjY4OTgxZTY0ZDEwNGMzNWFiMWI1NDMxYjA4MGRhZGFlZWY0ZDJkNWJlYmM0NDBlMWYwODExYjI0YzI5Yzg2YTZiZGFkODA0ZTE1NTlhN2IiLCJpYXQiOjE1MTIwMjUzMzcsIm5iZiI6MTUxMjAyNTMzNywiZXhwIjoxNTEzMzIxMzM3LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.b8e0fZb456JeMSQryXhzlTMxT-FgKu2i9Z62wZVnFpoMYnpapZeBtkiAxs0XpWj83_rYYvlp7aDBo0z8bDh5FKzywOuKuo08YJ_3bi-80MCm0tP-RFa_RUzBQgHzYgXHQXAGnmrsa_9GcgMrhLGOgHQwQNz5WwvBeQuuHitl8amvpLG6273MRLpbeK8GSyqGPr0fb4EVZwOjHpqnF3hDdxBTM1E763BHEjrZN82SAI_QO9MX1VGiKhS5WZ8sB3L2bke67TLZKcEIjl8cwW9MMzOKWQ-4CBDVD21dETBn4L03J4IVa7YGNAM4SDlSICrNP50UzLEhWlHWQrLVeEzoidw0o5A2etoVsvFRTEL6z3LZxEggV73x3VIcjt2Q5LVe82qTHPuM5NDnD9JsMfcQugqD_omvxOTXRAKhtTeP7SOR_B_BSCraGCwj5gubhVqscTnQgsShfQt83rzfQq3jB66IRHgdyQbufhqaeTSs6QBH2UmOw6s3jAy19D8qSKuvcRuWzXkU-z0Czmfz0SMcKB80TjJOYTN2C7b--n2oSaEAEWhlm2ZRuVQhZUAqODrGPQvHuEOCwrJFZuSvEpF6kIf-8fG-ECkS4XnfgaE-niF62bBNFKFyT3g4hLpQJm--j8KBFRPRL_DPZApXbyKFb1p0ITKxJ1r4U5cMIT7lITM"
+							},
+							{
+								"key": "Accept",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"HD\",\"phone\":\"13332983292\",\"password\":\"123456\",\"smscode\":\"261499\",\"mcode\":\"abcdef\",\"ip\":\"192.168.1.1\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/UserRegister",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserRegister"
+							]
+						},
+						"description": "api.misney.net/api/UserRegister"
+					},
+					"response": []
+				},
+				{
+					"name": "发送验证短信",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxZTQzNjVmZWE3NjlhN2QzODdmNTAwN2FiYjlhMTYxYTYzMDdlNmQzOTEyNmJlZTRlYTYyOWQwODZkZmQwNmRiMGRiMDFmZmZiZjJiMGM2In0.eyJhdWQiOiIxIiwianRpIjoiZTFlNDM2NWZlYTc2OWE3ZDM4N2Y1MDA3YWJiOWExNjFhNjMwN2U2ZDM5MTI2YmVlNGVhNjI5ZDA4NmRmZDA2ZGIwZGIwMWZmZmJmMmIwYzYiLCJpYXQiOjE1MTIzODE2NzUsIm5iZiI6MTUxMjM4MTY3NSwiZXhwIjoxNTEzNjc3Njc0LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.O6UFDyXsB7Js2UT-d2g1I1gWfdRNM6DXEWD-eYcoteWWzed6_ijM2IS0vvj-gqv6dzGvs3DWKICLqCY4Zr31S-Tr79X8O-uB_Al3eUAHClFsrq-ZKp_T8ULBawhx4oRYmkVMnNgp7lbxyumsDjruVSy958i6g4TuWi-T1Li-IXYTSU3aubmpswanydWiYfIOhLpzFEa0knpyuNGHk-hQByf-9xtFVrNoKY1yMKnR6_dN3Jf8C61D1ONBSlhs_EQx1f7v8hQgpsd4S5owNVC5TfiHx_kRGe3XRKtyrV0zhHVCcb8ejS0aBMcEoxdhpnDYNBmKOqiuvy4UTl-vT00ZeNLRn8z4UeCB62FWKJXHPUMKfi127lnduQJrHnnCrSHLN5p79pa5kyA0IytQ7AA45LaCVs5dqRQh56J0eH2r97wqpxAZZHhU4xp7xrnlI6JkseZAserp02wmopzlNvfaVwWukgVIayw7AmaowFZXkYH-hDPMy8ASG8xzc3_VcpT5f4xyTaMme5dga-Wr-rTUMNaCpOjfFcheuPPKSnD06OdduHXno9orixR82acmnC4TEIQ9SwnckFFY2TF_YuGh14b7zDH_HSeZFuaAhSA4gHHk6rwYMwbFcyWlF4CIIiFxcaHuRN9Y5WgJVfSKdboUfWRj6xXMPLEjddAO3npqhmg"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"templid\":\"62277\",\"phone\":\"13332983292\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/UserSmsSend",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserSmsSend"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "查询用户是否存在",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY2ODk4MWU2NGQxMDRjMzVhYjFiNTQzMWIwODBkYWRhZWVmNGQyZDViZWJjNDQwZTFmMDgxMWIyNGMyOWM4NmE2YmRhZDgwNGUxNTU5YTdiIn0.eyJhdWQiOiIxIiwianRpIjoiZjY4OTgxZTY0ZDEwNGMzNWFiMWI1NDMxYjA4MGRhZGFlZWY0ZDJkNWJlYmM0NDBlMWYwODExYjI0YzI5Yzg2YTZiZGFkODA0ZTE1NTlhN2IiLCJpYXQiOjE1MTIwMjUzMzcsIm5iZiI6MTUxMjAyNTMzNywiZXhwIjoxNTEzMzIxMzM3LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.b8e0fZb456JeMSQryXhzlTMxT-FgKu2i9Z62wZVnFpoMYnpapZeBtkiAxs0XpWj83_rYYvlp7aDBo0z8bDh5FKzywOuKuo08YJ_3bi-80MCm0tP-RFa_RUzBQgHzYgXHQXAGnmrsa_9GcgMrhLGOgHQwQNz5WwvBeQuuHitl8amvpLG6273MRLpbeK8GSyqGPr0fb4EVZwOjHpqnF3hDdxBTM1E763BHEjrZN82SAI_QO9MX1VGiKhS5WZ8sB3L2bke67TLZKcEIjl8cwW9MMzOKWQ-4CBDVD21dETBn4L03J4IVa7YGNAM4SDlSICrNP50UzLEhWlHWQrLVeEzoidw0o5A2etoVsvFRTEL6z3LZxEggV73x3VIcjt2Q5LVe82qTHPuM5NDnD9JsMfcQugqD_omvxOTXRAKhtTeP7SOR_B_BSCraGCwj5gubhVqscTnQgsShfQt83rzfQq3jB66IRHgdyQbufhqaeTSs6QBH2UmOw6s3jAy19D8qSKuvcRuWzXkU-z0Czmfz0SMcKB80TjJOYTN2C7b--n2oSaEAEWhlm2ZRuVQhZUAqODrGPQvHuEOCwrJFZuSvEpF6kIf-8fG-ECkS4XnfgaE-niF62bBNFKFyT3g4hLpQJm--j8KBFRPRL_DPZApXbyKFb1p0ITKxJ1r4U5cMIT7lITM"
+							},
+							{
+								"key": "Accept",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"HD\",\"phone\":\"13332983292\",\"password\":\"123456\",\"smscode\":\"261499\",\"mcode\":\"abcdef\",\"ip\":\"192.168.1.1\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/UserRegister",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserRegister"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "用户普通登陆",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZkMWE2ZWEyYWFkOWQ1MmYwOTEwNGI0ZWNmOWJkYjg3Y2VkMjg4ZWY3MTA2YWRmNDJiY2I2MmMyYjJhNmZlYWYxYzRkMmUwY2Q1NDM4ZDAwIn0.eyJhdWQiOiIxIiwianRpIjoiNmQxYTZlYTJhYWQ5ZDUyZjA5MTA0YjRlY2Y5YmRiODdjZWQyODhlZjcxMDZhZGY0MmJjYjYyYzJiMmE2ZmVhZjFjNGQyZTBjZDU0MzhkMDAiLCJpYXQiOjE1MTI2MjU1MDksIm5iZiI6MTUxMjYyNTUwOSwiZXhwIjoxNTEzOTIxNTA5LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.aM6jAi-stcVNaC1oQoJvT-6XFJ8kvUrit1yzVMGt7Cc4aT0xxaQYeztjiKO-bTlHWmh0Z82KmyCOXhI1lRO-kogMOReVWWD-LSIFHeVuDEeNuJLsG5F517O555JXtDZRXQWl9ZGmztyFhjgSYYIJIc6cg_po8GroE8w8zaIhC4HHPlTRJMYwhffCKYFc5Sq8N0WgHliQFyEFpYRr6kKYfcT-AIIVXpxpDqmb7jlO_Ch8aFJG5AECRJ2HcOw522q1sW34ggT74pEjMnadP-aVxddbh4xO5IZIg_RnkuKRr192z7TZPZMHWc9exIIboG6I8ifYQxi7rXe3vRPPgGUO6ITXDwLjTFl1D2W707RugKb-CGLogW4KT4zzRr-k3nYaEh4-GFhtQ8pLF_wqYEJkY3fxlJoLXJX0WdIjxUq34xKDZoa9TAY5FfUh1H72KDLJqTOnETQvG7v6trhpa9YenVbRRMqcNzkJiOpu5NkLxX912kmD1DnS61PAsK9-G6GDAU6ccPb7z0nqvCP4eoLq2S72CgtDkoEk9QSMqch_xS9GbCoKfcCR6-c0kNC7oUb6ubw8unkNGs81Yihj7Zw2RS2j637FQvnq2AWOdIrVKukw4w_s0e8QT_uRsEd2_b2UEEQ-d565rmhbkpfB_Ya4Qk_P04lU--zkbwbrjctZ5b8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"phone\":\"13332983292\",\"password\":\"123456\",\"agent\":\"16\",\"ip\":\"183.62.232.198\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/UserLoginGen",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserLoginGen"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "用户短信登陆",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNlNDVmZThhNDMzZTVmZjE3YWZiYzVmY2U5MjVjODU0NmMxYTY4NzMzOTNiNzllMmQxYjdkYzYzODk1NmM2MzFhZGZiZGE5ZTRiNmFjYzY5In0.eyJhdWQiOiIxIiwianRpIjoiY2U0NWZlOGE0MzNlNWZmMTdhZmJjNWZjZTkyNWM4NTQ2YzFhNjg3MzM5M2I3OWUyZDFiN2RjNjM4OTU2YzYzMWFkZmJkYTllNGI2YWNjNjkiLCJpYXQiOjE1MTI0NTY3ODUsIm5iZiI6MTUxMjQ1Njc4NSwiZXhwIjoxNTEzNzUyNzg1LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.EdWQRJcOP19F9Dm-_bl51pYoFxV13gkaqwYRKfV2upOHYMnNW6HAJCbBxFrLsGeSLUkX4xyO02a3g3MHVWFDyPS7Ku4ztClrKqDzFhQMwkjC27-oKdRSljFlJS4LQYdP6-CtZSf9m71YuDrtiz0BNZJrv3r0vIzQ_iWd804PdqiJPP5R5Qgi6j58LR-ES30_n9iiTzh7O76G05YXtUy29IFfx2V39Qcv62bdVKd3pkLebwLEQDc-FWeQH7n-UWxrmre_QsWstPqFSk-rYcUMQPURRcgXc2OpxtzGzO_07PcQcF7aL3dEhbjuF5YS_SPx215liB4mKZzeyDrwDfJEiXQrQQ4vaX2NhSVAvxWSyDjvDEnB5_kSUY7YjTvFm3eiThBtwVdzbS3ZUyByINjN5Du9EIgczv9riOyqRm5_Xb3SAQqKMZM1xXRI3Y0JF0DVA8M5RLUsTDJy1D7U8hdUygAz6LWUHb31veMoiQNuS4z5OKCcPU_uqXhiAt4NB0KNmlEsfzj_N2k9PnoQZqzvuLlO5Brt1bD_60e1vIo8S_GMfs9jGUBPB5HYtFeluQfsXwxkS0duF_BZ6TWt45H5avw6McaREPIuNptTUGTFm9-yihmCHw-Ak1vE4MXzdLXkLxPtDrq6CFmU4FtGcQI2wPKJjWRlGZLpm_XSwa9-9Xk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"phone\":\"13332983292\",\"password\":\"123456\",\"smscode\":\"644509\",\"agent\":\"16\",\"ip\":\"183.62.232.198\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/UserLoginSms",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserLoginSms"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shop",
+			"description": "",
+			"item": [
+				{
+					"name": "2.1 获取店铺列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sid\":\"\",\"cusname\":\"\",\"type\":\"\",\"state\":\"\",\"key\":\"\",\"devno\":\"\",\"order\":\"desc\",\"limit\":\"\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ShopQuery?page=2",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ShopQuery"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"equals": true
+								}
+							]
+						},
+						"description": "* 'sid'\t\t=> 用于获取单个店铺信息时\n* 'type'\t=> 店铺类型:0=新版店铺, 1=老版店铺,2=已升级店铺,null=全部\n* 'state' => 店铺状态:0=正常,4=停止,null=全部\n* 'cusname'     => 用户名:精准搜索\n* 'key'   => 搜索关键字:对地区,店铺名,用户名进行模糊搜索\n* 'limit'   => 分页大小"
+					},
+					"response": []
+				},
+				{
+					"name": "1.1 获取客户列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cusid\":\"9999\",\"manager\":\"\",\"key\":\"\",\"order\":\"asc\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/CustomerQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"CustomerQuery"
+							]
+						},
+						"description": "* 'cusid'\t=> 客户id,用于获取单个用户信息时\n* 'cusname' => 负责人,精准\n* 'key'     => 模糊搜索(用户名,信息,备注,店长,店长电话)\n* 'order'   => 排序, ASC/DESC"
+					},
+					"response": []
+				},
+				{
+					"name": "1.2 编辑客户",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"4\",\"cusid\":\"9988\",\"cusname\":\"客户1名3称\",\"manager\":\"负责人\",\"owner\":\"店长\",\"ownertel\":\"123123123\",\"info\":\"信息\",\"remark\":\"备注\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/CustomerEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"CustomerEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,2=更新,4=删除\n* 'cusid'    => 用户id,必填\n* 'cusname'  => 用户名,type=1时必填\n* 'manager'  => 负责人\n* 'owner'    => 店长\n* 'ownertel' => 店长电话\n* 'info'     => 信息\n* 'remark'   => 备注"
+					},
+					"response": []
+				},
+				{
+					"name": "2.2 编辑店铺",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"2\",\"sid\":\"0316\",\"country\":\"C\",\"areacode\":\"130106\",\"cusid\":\"A196\",\"shopname\":\"121113\",\"projno1\":\"C0010\",\"projno2\":\"1213\",\"projno3\":\"1123\",\"projno4\":\"ddd\",\"share\":\"\",\"state\":\"1\",\n\"adv\": {\n\t\"projname\": \"12312121113 \",\n\t\"brand\": \"br12and\",\n\t\"property\": \"p2roperty\",\n\t\"saler\": \"sale2r\",\n\t\"owner\": \"ow12ner\",\n\t\"ownertel\": \"o2wnertel\",\n\t\"keeper\": \"kee2per\",\n\t\"keepertel\": \"ke2epertel\",\n\t\"startdate\": \"2017-12-13\",\n\t\"enddate\": \"2017-12-13\",\n\t\"add\": \"详细地址\",\n\t\"remark\": \"3\"\n}\n}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ShopEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ShopEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,2=更新,4=删除,5=更新记录\n* 'sid'    => 店铺简码,type=2/4时必填\n* 'state'  => 仅type=2时有效"
+					},
+					"response": []
+				},
+				{
+					"name": "3.1 获取游戏列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"\",\"gameid\":\"3004\",\"gamename\":\"\",\"gametype\":\"\",\"order\":\"asc\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/GameQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"GameQuery"
+							]
+						},
+						"description": "* 'type'\t=> 0/null=查询游戏列表,1=查询游戏类型列表\n* 'gameid'\t=> 游戏id,用于获取单个游戏信息时\n* 'gamename' => 按游戏名查询\n* 'gametype' => 按游戏类型查询\n* 'order'   => 排序, ASC/DESC"
+					},
+					"response": []
+				},
+				{
+					"name": "3.2 编辑游戏",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"1\",\"gameid\":\"9988\",\"gametype\":\"游戏2类型\",\"gamename\":\"游戏名\",\"gametime\":\"123\",\"creater\":\"创建人,\"state\":\"1\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/GameEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"GameEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,2=更新,4=删除\n* 'gameid'    => 游戏id,必填\n* 'gametype'  => 游戏类型\n* 'gametime'  => 游戏时间,秒数\n* 'creater'    => type=1时必填\n* 'updater' => type=2时必填\n* 'state'     => 状态,1=正常,4=下架"
+					},
+					"response": []
+				},
+				{
+					"name": "4.1 获取设备类型",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"3\",\"devtype\":\"\",\"devno\":\"\",\"ver\":\"\",\"key\":\"\",\"order\":\"desc\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/DeviceTypeQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"DeviceTypeQuery"
+							]
+						},
+						"description": "* 'type'\t=> 0/null=查询设备类型列表,1=查询设备类型列表,2=查询设备型号列表\n* 'devtype'\t=> 设备类型\n* 'devno' => 设备型号\n* 'ver' => 设备版本\n* 'key' => 模糊查询 \n* 'order'   => 排序, ASC/DESC\n\n* 当type=1/2/3时 其他参数无效"
+					},
+					"response": []
+				},
+				{
+					"name": "4.2 编辑设备类型",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"4\",\"dtid\":\"72\",\"devtype\":\"99\",\"devtypename\":\"方芳芳\",\"devno\":\"99\",\"devname\":\"devname\",\"ver\":\"99\",\"vername\":\"versionname\",\"state\":\"1\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/DeviceTypeEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"DeviceTypeEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,2=更新,4=删除\n* 'dtid'    => 设备类型id,type=2/4时必填\n* 'devtype'  => 设备类型\n* 'devtypename'  => 设备类型名称\n* 'devno'    => 设备型号\n* 'devname' => 设备型号名称\n* 'version'    => 设备版本\n* 'versionname' => 设备版本名称\n* 'state'     => 状态,1=正常,4=下架"
+					},
+					"response": []
+				},
+				{
+					"name": "5.1 设备信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sid\":\"0316\",\"did\":\"\",\"cusname\":\"\",\"devtype\":\"\",\"devno\":\"\",\"devver\":\"\",\"key\":\"\",\"order\":\"desc\",\"limit\":\"\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/DeviceQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"DeviceQuery"
+							]
+						},
+						"description": "* 'sid'\t\t=> 用于获取单个店铺所有设备\n* 'did'\t=> 用于获取单个设备\n* 'cusname'     => 客户名:精准搜索\n* 'devtype'     => 设备类型:精准搜索,2位数字\n* 'devno'     => 设备型号:精准搜索，2位数字\n* 'devver'     => 设备版本:精准搜索，字符串\n* 'key'   => 搜索关键字:设备型号名称,店铺名,客户名进行模糊搜索\n* 'limit'   => 分页大小"
+					},
+					"response": []
+				},
+				{
+					"name": "5.2 编辑设备",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"4\",\"sid\":\"0316\",\"did\":\"02ee\",\"devver\":\"10-ED-PO\",\"genre\":\"D\",\"display\":\"1\",\"state\":\"0\",\"safe\":\"Emax%D@BFuse\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/DeviceEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"DeviceEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,4=删除,暂不打算支持更新\n* 'sid'    => 店铺简码,type=2/4时必填\n* 'state'  => 仅type=2时有效\n* 'safe'  => 安全密码，删除时提供"
+					},
+					"response": []
+				},
+				{
+					"name": "6.1 IC卡信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sid\":\"\",\"did\":\"\",\"cusname\":\"\",\"devtype\":\"\",\"devno\":\"\",\"devver\":\"\",\"key\":\"\",\"order\":\"desc\",\"limit\":\"10\",\"adv\": {\"current_page\": 1}}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/McardQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"McardQuery"
+							]
+						},
+						"description": "* 'sid'\t\t=> 用于获取单个店铺所有设备\n* 'did'\t=> 用于获取单个设备\n* 'cusname'     => 客户名:精准搜索\n* 'devtype'     => 设备类型:精准搜索,2位数字\n* 'devno'     => 设备型号:精准搜索，2位数字\n* 'devver'     => 设备版本:精准搜索，字符串\n* 'key'   => 搜索关键字:设备型号名称,店铺名,客户名进行模糊搜索\n* 'limit'   => 分页大小"
+					},
+					"response": []
+				},
+				{
+					"name": "6.2 编辑IC卡",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA4ZjMwNTgyM2U2NDExYmU4NmY0ZWE4ZGFjODhlMjFlYzNjMjE5ZDg3YjFlN2I0NTY4ZjM4NGMyOGE3ZjI3ZDVjYjIxYjVkNjJhMzE4MDE3In0.eyJhdWQiOiIxIiwianRpIjoiMDhmMzA1ODIzZTY0MTFiZTg2ZjRlYThkYWM4OGUyMWVjM2MyMTlkODdiMWU3YjQ1NjhmMzg0YzI4YTdmMjdkNWNiMjFiNWQ2MmEzMTgwMTciLCJpYXQiOjE1MTI2MjU1MzIsIm5iZiI6MTUxMjYyNTUzMiwiZXhwIjoxNTQ0MTYxNTMyLCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.QhRuVvm_6tsjE0Ml_uQtwY7Jhg5J1Er7_ygFV8h31L6RXENLpsOXOC0tKJc9Y8qoAjqyB3Hw307RQqHhBsyUVzPLlbevsdtjlInabnww0YfW7Mh2-h36Tu9sHziYG4p_yjp3SlB8nPMnvqTRkf5jgBqg-2ZlprmYBYdgOTbJ4j4TvcXiACo1V7qFxj_x4ETWagk54lR9evABEdiuPOnpMK4GYIN1-votxrLxuVB4qv_ygYWE1lDosrbN5LF46ei1zJdAbfUW5M0aH9zWe_A-YOn_tgPjLt5iP8LlhhQR1RLYBYx12cNOVjXsmWzWTOEuzZ-ZMX4eYK7Tcn-jX1V5U4Igh_dqzvGCZet6-LWQsMJWRTBp3mEa_2AKC59Ww3HG2-YSRnLNvVS0ZUlqGSVTxiZfRFUg8_7tyKrKDhVQwpPy1m8efqWetvuFc33bcesuGhmMty1J54TEfGrNj9pdeWB5l9cVOHad1Ec6nvVsxHbAw6V-gnDAIc17498dE4Lf1AFP2d0nI2sbu2UNGaubLa_EY8VlDFxesqpGIJCDp83ly6VLIb4GgLiv5-Y_M0aBNgxNwv20P-qR2kfKOq67MODoHHkivKuUqDBX-81xicTz-G_lus4JBwzuX5ykpsGxzwPYmeniSLotSvKR_QYgdoODDPq5XxT8Tch_JQRNyQ0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"type\":\"4\",\"did\":\"02d4\",\"cardno\":\"A0001929\",\"lockcode\":\"12345678\",\"cardtype\":\"1\",\"cardflags\":\"0\",\"shopflags\":\"0\",\"start\":\"2017-12-11\",\"end\":\"2018-12-11\",\"safe\":\"Emax%D@BFuse\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/McardEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"McardEdit"
+							]
+						},
+						"description": "* 'type'     => 操作类型,1=新增,3=获取可能添加的卡号,4=删除,暂不打算支持更新\n* 'did'    => 店铺简码\n* 'safe'  => 安全密码，删除时提供"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"description": "",
+			"item": [
+				{
+					"name": "3.1.1 故障信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"stock\":\"1\",\"creater\":\"\",\"start\":\"2017-12-15\",\"end\":\"2017-12-15\",\"key\":\"\",\"pno\":\"\",\"order\":\"desc\",\"limit\":\"1\"}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ProblemQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ProblemQuery"
+							]
+						},
+						"description": "* 'stock'    => 1=只查询有出库的故障\n* 'creater'     => 录入人:精准搜索\n* 'key'   => 搜索关键字:原因,故障信息,解决方法(可增加)\n* 'limit'   => 分页大小\n* 'start'   => 搜索大于该时间\n* 'end'   => 搜索小于该时间"
+					},
+					"response": []
+				},
+				{
+					"name": "3.1.2 故障编辑",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\":\"1\",\n\t\"pno\":\"20171215-17\",\n\t\"sid\":\"0316\",\n\t\"date\":\"2017-12-15\",\n\t\"reporter\":\"reporter\",\n\t\"devno\":\"08\",\n\t\"ver\":\"02-ST-800P\",\n\t\"did\":\"\",\n\t\"content\":\"content\",\n\t\"reason\":\"reason\",\n\t\"creater\":\"creater\",\n\t\"solve\": {\n\t\t\"solved\": \"1\",\n\t\t\"solver\": \"solver\",\n\t\t\"solve_way\": \"solve_way\"\n\t},\n\t\"stock\": {\n\t\t\"stock_out\": \"1\",\n\t\t\"stock_out_list\": \"出库1清单\",\n\t\t\"express\": \"1\",\n\t\t\"express_fee\": \"11\",\n\t\t\"express_no\": \"12345678\"\n\t},\n\t\"stockadv\": {\n\t\t\"stock_out_proposer\": \"黄晓刚\",\n\t\t\"stock_out_ding_no\": \"12313132132132131\",\n\t\t\"stock_out_site\": \"超算\",\n\t\t\"stock_out_date\": \"2017-12-15\",\n\t\t\"back\": \"1\",\n\t\t\"back_list\": \"退回清单\",\n\t\t\"back_date\": \"2017-12-15\",\n\t\t\"back_receiver\": \"收货人\",\n\t\t\"back_express\": \"1\",\n\t\t\"back_express_fee\": \"22\",\n\t\t\"back_express_no\": \"4564564654\",\n\t\t\"back_check\": \"检查人\",\n\t\t\"back_accident\": \"1\",\n\t\t\"back_treatment\": \"1\",\n\t\t\"back_site\": \"所在地\",\n\t\t\"remark\": \"备注\"\n\t},\n\t\"accident\":\"1\",\n\t\"repair\":\"1\"\n}\n\t"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ProblemEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ProblemEdit"
+							]
+						},
+						"description": "* 'type'\t=> 1=创建,2=编辑,4=删除(删除会同时删除该故障的返修记录数据)\n* 'pno'\t=> 故障编号,仅在type=2/4时有效\n* 'solve'\t=> 勾选解决\n* 'stock'\t=> 勾选出库\n* 'stockadv'=> 出库详细\n* 'repair'\t=> 勾选返修,仅在type=1时有效"
+					},
+					"response": []
+				},
+				{
+					"name": "3.2.1 返修查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"\",\n\t\"supplier\":\"\",\n\t\"charge\":\"\",\n\t\"repair_start\":\"2017-12-11\",\n\t\"repair_end\":\"\",\n\t\"back_start\":\"\",\n\t\"back_end\":\"\",\n\t\"expno\":\"\",\n\t\"key\":\"\",\n\t\"order\":\"desc\",\n\t\"limit\":\"\"\n}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/RepairQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"RepairQuery"
+							]
+						},
+						"description": "* 'sid'    => 用于获取单个店铺信息时\n* 'type'  => 店铺类型:0=新版店铺, 1=老版店铺,2=已升级店铺,null=全部\n* 'state' => 店铺状态:0=正常,4=停止,null=全部\n* 'cusname'     => 用户名:精准搜索\n* 'key'   => 搜索关键字:对地区,店铺名,用户名进行模糊搜索\n* 'limit'   => 分页大小"
+					},
+					"response": []
+				},
+				{
+					"name": "3.2.2 返修编辑",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\":\"4\",\n\t\"id\":\"196\",\n\t\"material\":\"物品1名称\",\n\t\"amount\":\"17\",\n\t\"supplier\":\"供应商\",\n\t\"charge\":\"1\",\n\t\"date\":\"2017-12-12\",\n\t\"expno\":\"123456789\",\n\t\"back_date\":\"2017-12-15\",\n\t\"back_expno\":\"897654321\",\n\t\"treatment\":\"维修情况\",\n\t\"remark\":\"备注\"\n}\n\t"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/RepairEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"RepairEdit"
+							]
+						},
+						"description": "* 'id'    => type=1时无效"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"description": "",
+			"item": [
+				{
+					"name": "4.1.1 项目信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"parent\":\"\",\n\t\"member\":\"黄晓刚\",\n\t\"key\":\"大项目\",\n\t\"order\":\"desc\",\n\t\"limit\":\"\"\n}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ProjectQuery",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ProjectQuery"
+							]
+						},
+						"description": "* 'stock'    => 1=只查询有出库的故障\n* 'creater'     => 录入人:精准搜索\n* 'key'   => 搜索关键字:原因,故障信息,解决方法(可增加)\n* 'limit'   => 分页大小\n* 'start'   => 搜索大于该时间\n* 'end'   => 搜索小于该时间"
+					},
+					"response": []
+				},
+				{
+					"name": "4.1.2 项目编辑",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI5NGRiNjYzNWM3Y2IzMGRlODYzYTM4NDVjOGVmMGI4NTU1ZDQwNjA3M2U2NmVmY2FjODAwNjVhMjU4YzI2MDg4MWI3MTg0ZjllODg0ZmZiIn0.eyJhdWQiOiIxIiwianRpIjoiMjk0ZGI2NjM1YzdjYjMwZGU4NjNhMzg0NWM4ZWYwYjg1NTVkNDA2MDczZTY2ZWZjYWM4MDA2NWEyNThjMjYwODgxYjcxODRmOWU4ODRmZmIiLCJpYXQiOjE1MTI2MTQzMzYsIm5iZiI6MTUxMjYxNDMzNiwiZXhwIjoxNTQ0MTUwMzM2LCJzdWIiOiIxMDkiLCJzY29wZXMiOltdfQ.GbnoUj0Qfkx_0Jt1Wqh8xjjCbodTHAdpkBUcZOTSdNw-GvmMGHU7VS2ZVd_WvllzNujnLFE7wsKAv9UJZzuUDB8KLbdw2ez-nFFuYHoispRTCAmxTy93PgeaNrr6Q70a_m9qkHiTtwvFs3YQ4G_xws-KS3UjHS5ZSvF--BW66wJLUzhfqv5_DV_0UHR-N9NoOzFqdUfsZr-jGI3GS9TyWPrWjRbDZfT8KZIQdO36aLohcRf8BY2jmgcTg7DAFUK3r_pak4V_vKw-4GokfjkPNeDpheMH0yrIrY2XRLy6UDt82WI5oyftqzqXCZ-t3T_r7WJoGybXjLYKGKdN9POX2n-5nh5ZVVGPmlAX_OpG-0rz4cwx_3brPeQftJqGWOY4oa7Ggx6EZvavu7XTQ6oFGCRVgZbfxIGmraSHIrKkK7kHeMvs092XhTKfEWSZ5CeW4DuxygcwW61RcagzmfZywvNXk42R3pVld-l-2paGQejNR13DHXuYh_OkAJQ_aR9KTV51NCx9JvwXPp9o2Gbj3wCPO2U6z-ZAv2NHV5vsF-kuUtMwczLWeqHVz0y3gB1lhuqgVe3HWFn3rmZA8h158DI7lSftrIa8TbVlyZM1x3MbB64B6z_jQgf0zmqgCY1GPnhSEaXjkulBVyJmi9P_BFC_I3Ou316-qsgkQk0SDTw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\":\"2\",\n\t\"projno1\":\"A0099\",\n\t\"projname1\":\"大项目6名\",\n\t\"projno2\":\"6\",\n\t\"projname2\":\"小项目1名\",\n\t\"ptype\":\"B\",\n\t\"manager\":\"黄晓刚\",\n\t\"member\":\"黄晓刚,黄晓刚,黄晓刚\",\n\t\"state\":\"1\",\n\t\"start\":\"2017-12-13\",\n\t\"end\":\"2017-12-12\",\n\t\"longterm\":\"0\"\n}"
+						},
+						"url": {
+							"raw": "api.misney.net/api/emaxtech/ProjectEdit",
+							"host": [
+								"api",
+								"misney",
+								"net"
+							],
+							"path": [
+								"api",
+								"emaxtech",
+								"ProjectEdit"
+							]
+						},
+						"description": "* 'type'\t=> 1=创建,2=编辑,4=删除(删除会同时删除该故障的返修记录数据)\n* 'pno'\t=> 故障编号,仅在type=2/4时有效\n* 'solve'\t=> 勾选解决\n* 'stock'\t=> 勾选出库\n* 'stockadv'=> 出库详细\n* 'repair'\t=> 勾选返修,仅在type=1时有效"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://api.misney.net/oauth/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"1\",\n    \"client_secret\": \"0rEvIZBzarN4j00Poy8fdSmaVQM0cYogkiZlLiLg\",\n    \"scope\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://api.misney.net/oauth/token",
+					"protocol": "http",
+					"host": [
+						"api",
+						"misney",
+						"net"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}

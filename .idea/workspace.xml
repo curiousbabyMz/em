@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="">
+    <list default="true" id="c28f6b8f-ed21-47e0-ae8a-19d801ddf4cc" name="Default" comment="officechange for emax">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/swagger-ui-master(1).zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/APIword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/api.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/.idea/2.0界面.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/AIO2.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/EMax1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/back1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/bstar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/food.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/food_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/p.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/paper.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/xlstar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/1512975203(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/151331231321321321232.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/1513319083(1222.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/1513319083(1222.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/plan_50_.png.thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/shot_vpn_50_.png.thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/material/界面素材/weed_50_.png.thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/newbie.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2.0界面/界面.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api文档/api.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api文档/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api文档/api文档.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/答题页面/1506323062(1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/答题页面/EMax-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/答题页面/大屏幕.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api文档/api文档.html" afterPath="$PROJECT_DIR$/api文档/api文档.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,57 +60,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api文档.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api文档/api文档.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#button#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api文档/api.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="581">
+              <caret line="30" column="115" lean-forward="false" selection-start-line="30" selection-start-column="115" selection-end-line="30" selection-end-column="115" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api文档/api.js">
+      <file leaf-file-name="APIword.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/APIword.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="290">
+              <caret line="318" column="0" lean-forward="true" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api文档/api.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-588">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding>
-                <element signature="e#401#1540#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +103,14 @@
       <find>itemin</find>
       <find>href=&quot;#itemin</find>
       <find>class=&quot;panel&quot;</find>
+      <find>panel-title</find>
+      <find>hello_1</find>
+      <find>panelout</find>
+      <find>panel1in</find>
+      <find>panel2in</find>
+      <find>panel3in</find>
+      <find>panelin</find>
+      <find>opblock-get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,7 +125,6 @@
         <option value="$PROJECT_DIR$/技术部后台/index、.css" />
         <option value="$PROJECT_DIR$/技术部后台/index.html" />
         <option value="$PROJECT_DIR$/技术部后台/index.css" />
-        <option value="$PROJECT_DIR$/tech/index.html" />
         <option value="$PROJECT_DIR$/2.0界面/newbie.html" />
         <option value="$PROJECT_DIR$/2.0界面/界面.css" />
         <option value="$PROJECT_DIR$/2.0界面/界面.html" />
@@ -125,9 +140,12 @@
         <option value="$PROJECT_DIR$/2.0界面/AIO2.0.1.js" />
         <option value="$PROJECT_DIR$/api文档/api.json" />
         <option value="$PROJECT_DIR$/api文档/api.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/api文档/api.css" />
+        <option value="$PROJECT_DIR$/tech/index.html" />
+        <option value="$PROJECT_DIR$/tech/api.json" />
         <option value="$PROJECT_DIR$/api文档/api文档.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/api/APIword.html" />
       </list>
     </option>
   </component>
@@ -168,7 +186,7 @@
             <path>
               <item name="Emax" type="b2602c69:ProjectViewProjectNode" />
               <item name="Emax" type="462c0819:PsiDirectoryNode" />
-              <item name="api文档" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,13 +211,16 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\softwarelearn\html\Emax\tech" />
+      <recent name="F:\softwarelearn\html\Emax\api文档" />
+      <recent name="F:\softwarelearn\html\Emax\2.0界面" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\softwarelearn\html\Emax\技术部后台" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\softwarelearn\html\Emax\2.0界面" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -240,7 +261,7 @@
       <workItem from="1513739673385" duration="2431000" />
       <workItem from="1513748394727" duration="12239000" />
       <workItem from="1513824363669" duration="18630000" />
-      <workItem from="1513906384162" duration="5818000" />
+      <workItem from="1513906384162" duration="15241000" />
     </task>
     <task id="LOCAL-00001" summary="officechange for emax">
       <created>1512985568666</created>
@@ -466,11 +487,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513912164404</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="officechange for emax">
+      <created>1513912297143</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1513912297143</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139881000" />
+    <option name="totallyTimeSpent" value="149304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,11 +511,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2527115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32632744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -499,7 +529,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32632744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -548,42 +577,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="100" column="22" lean-forward="true" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3717">
-          <caret line="177" column="19" lean-forward="false" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.0界面/AIO2.0.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1113">
           <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,13 +690,6 @@
     <entry file="file://$PROJECT_DIR$/技术部后台/tech.html" />
     <entry file="file://$PROJECT_DIR$/技术部后台/index.html" />
     <entry file="file://$PROJECT_DIR$/技术部后台/index.css" />
-    <entry file="file://$PROJECT_DIR$/tech/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tech/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -768,9 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -808,55 +795,80 @@
     <entry file="file://$PROJECT_DIR$/api文档/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/api文档/swagger-ui-master/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="31" column="131" lean-forward="false" selection-start-line="31" selection-start-column="131" selection-end-line="31" selection-end-column="131" />
+        <state relative-caret-position="-105">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api文档/api.json">
+    <entry file="file://$PROJECT_DIR$/api文档/swagger-ui-master/dist/swagger-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#401#1540#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="274">
+          <caret line="0" column="5855" lean-forward="false" selection-start-line="0" selection-start-column="5844" selection-end-line="0" selection-end-column="5855" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api文档/api.css">
+    <entry file="file://$PROJECT_DIR$/tech/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="1323">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tech/api.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api文档/api文档.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#button#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="349">
+          <caret line="332" column="24" lean-forward="false" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api文档/api.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api文档/api.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="312" column="32" lean-forward="true" selection-start-line="312" selection-start-column="32" selection-end-line="312" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="30" column="115" lean-forward="false" selection-start-line="30" selection-start-column="115" selection-end-line="30" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/APIword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="318" column="0" lean-forward="true" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
