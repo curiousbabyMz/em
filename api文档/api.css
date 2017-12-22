@@ -31,17 +31,17 @@
 }
 
 [id*=panelin]>.panel>.panel-heading{
-    background: #7b98b8;
-    color: #ffffff;
+    /*background: #7b98b8;*/
+    color: #000;
 }
-[id*=itemin]>.panel-body{
-    background: rgba(0, 199, 253, 0.1);
-    border: 1px solid #7b98b8;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-    /*padding-left: 0;*/
-    /*padding-right: 0;*/
-}
+/*[id*=itemin]>.panel-body{*/
+    /*background: rgba(0, 199, 253, 0.1);*/
+    /*border: 1px solid #7b98b8;*/
+    /*border-bottom-left-radius:5px;*/
+    /*border-bottom-right-radius:5px;*/
+    /*!*padding-left: 0;*!*/
+    /*!*padding-right: 0;*!*/
+/*}*/
 
 
 
