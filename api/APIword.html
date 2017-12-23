@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title col-md-2 col-md-offset-1 text-center">API文档</div>
-                <div class="col-md-9">
+                <div class="col-md-8 col-md-offset-1">
                     <form class="navbar-form navbar-right">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
@@ -82,24 +82,24 @@
         </div>
     </div>
     <div class="row">
-        <div class="panel-group" id="panelout1">
+        <div class="panel-group" id="pa">
             <div class="panel">
-                <div class="panel-heading" data-toggle="collapse" data-parent="panelout1" href="#itemout1">
+                <div class="panel-heading" data-toggle="collapse" data-parent="pa" href="#it">
                     <div class="panel-title">User</div>
                 </div>
-                <div id="itemout1" class="panel-collapse collapse in">
+                <div id="it" class="panel-collapse collapse in">
                     <div class="panel-body">
-                        <div class="panel-group" id="panelin1-1">
+                        <div class="panel-group" id="pain">
                             <div class="panel panel-info">
-                                <div class="panel-heading" data-toggle="collapse" data-parent="panelin1-1" href="#item1in1">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="pain" href="#itin">
                                     <div class="panel-title">
                                         <div class="col-md-1 text-center stitle">POST</div>
                                         <div>/api/UserRegister 查询用户是否存在</div>
                                     </div>
                                 </div>
-                                <div id="item1in1" class="panel-collapse collapse in">
+                                <div id="itin" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <div class="text-inden">hello_1</div>
+                                        <div class="">hello_1</div>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                 "                <div class=\"panel-heading\" data-toggle=\"collapse\" data-parent=\"panelout"+
                 i+"\" href=\"#itemout"+
                 i+"\">\n" +
-                "                    <div class=\"panel-title\">"+data.item[i].name+"</div>\n" +
+                "                    <div class=\"panel-title\"><a href='#'>"+data.item[i].name+"</a></div>\n" +
                 "                </div>\n" +
                 "                <div id=\"itemout"+
                 i+"\" class=\"panel-collapse collapse in\">\n" +

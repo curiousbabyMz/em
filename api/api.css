@@ -1,5 +1,5 @@
 .head {
-    background: rgba(0, 79, 140, 0.8);
+    background: rgba(0, 79, 140, 0.7);
     height: 80px;
     font: 800 25px/40px "Adobe 黑体 Std R", sans-serif;
     /*vertical-align: middle;*/
@@ -19,8 +19,14 @@
 
 }
 
-.navbar-form .form-control {
-    width: 700px;
+.navbar-form ,.form-group>.form-control{
+    width: 100%;
+}
+.navbar-form>.form-group{
+    width: 84%;
+}
+.navbar-form > button {
+    margin-top: 5px;
 }
 
 .container:nth-of-type(2) {
@@ -48,20 +54,25 @@
     line-height: 2.5em;
 }
 
-[id*=itemin]>.panel-body{
-background: rgba(0, 199, 253, 0.1);
-border: 1px solid #7b98b8;
-border-bottom-left-radius:5px;
-border-bottom-right-radius:5px;
-/*padding-left: 0;*/
-/*padding-right: 0;*/
+[id*=itemin] > .panel-body {
+    background: rgba(0, 199, 253, 0.1);
+    border: 1px solid #7b98b8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
 }
+
 .name {
     line-height: 50px;
 }
 
 .h1 {
     font-size: 60px;
+}
+
+a, a:hover, a:visited, a:focus {
+    text-decoration: none;
 }
 
 sup {
@@ -72,10 +83,11 @@ sup {
     line-height: 5px;
     padding: 0 10px 5px;
 }
-hr{
+
+hr {
 
     border-top: 1px solid;
-    border-image: linear-gradient(to right,rgba(200, 200, 200, 0), rgb(0, 21, 63) 10%, rgb(0, 21, 63)90%, rgba(200, 200, 200, 0)) 1;
+    border-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgb(0, 21, 63) 10%, rgb(0, 21, 63) 90%, rgba(200, 200, 200, 0)) 1;
 }
 
 .container:nth-of-type(1) .navbar-form {
