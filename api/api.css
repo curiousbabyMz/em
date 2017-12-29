@@ -77,11 +77,19 @@ a, a:hover, a:visited, a:focus {
 
 sup {
     background: #c4cbc9;
-    color: #fff;
+    /*color: #fff;*/
     border-radius: 30px;
     font-size: 20px;
-    line-height: 5px;
+    /*line-height: 5px;*/
     padding: 0 10px 5px;
+}
+.sup-n {
+    background: #FFF;
+    color: #f00;
+    border-radius:0;
+    font-size: 10px;
+    /*line-height: 5px;*/
+    padding: 0;
 }
 
 hr {
@@ -97,8 +105,17 @@ hr {
 .btn, .btn-default, .btn-default:active, .btn-default:hover, .btn-default:visited, .btn-default:focus, .open > .dropdown-toggle.btn-default:hover, .open > .dropdown-toggle.btn-default:active {
     border: 2px solid #3f6a74;
     font-weight: bold;
+    background: #fff;
 }
 
 .bold {
     font-weight: bold;
+}
+.bg-gray{
+    background: #dcd8d8;
+    box-shadow: rgba(205, 205, 209, 0.81) 0 0 5px inset;
+    border-radius: 5px;
+}
+.border-bottom{
+    border-bottom: rgba(90,192,206,0.81);
 }
