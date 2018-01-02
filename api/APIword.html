@@ -100,23 +100,72 @@
                                 <div id="itin" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <div class="XSunit">
-                                                <div class="col-md-12 h3">TODO:Add Description</div>
-                                                    <div class="col-md-12 bg-gray">
-                                                            <div class="col-md-1 h4">Parameters</div>
-                                                            <div class="col-md-1 pull-right"><div class="btn">Try it out</div></div>
-                                                    </div>
-                                            <div class="col-md-12 border-bottom">
-                                                <div class="col-md-1 h5">Name</div>
-                                                <div class="col-md-3 col-md-offset-4 h5">Description</div>
+                                            <div class="col-md-12 h3">TODO:Add Description</div>
+                                            <div class="col-md-12 bg-gray">
+                                                <div class="col-md-1 h4">Parameters</div>
+                                                <div class="col-md-1 pull-right">
+                                                    <div class="btn">Try it out</div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-12 border-bottom">
+                                            <div class="col-md-12 borderb">
+                                                <div class="col-md-1 h5">Name</div>
+                                                <div class="col-md-2 col-md-offset-4 h5">Description</div>
+                                            </div>
+                                            <div class="col-md-12">
                                                 <div class="col-md-5">
-                                                    <div class="h3">Body<sup class="sup-n">* required</sup></div>
-                                                    <div class="h3">Authorization<sup class="sup-n">* required</sup></div>
+                                                    <div class="h5 bold">Body<sup class="sup-n">* required</sup></div>
+                                                    <div class="ita">(body)</div>
                                                 </div>
                                                 <div class="col-md-7">
+                                                    <br/>
+                                                    <div>
+                                                        <ul class="nav nav-pills">
+                                                            <li role="presentation"><a href="#">Example Value</a></li>
+                                                            <li role="presentation"><a href="#">Model</a></li>
+                                                        </ul>
+                                                        <div class="ExampleValue">
+                                                            <pre>
+
+                                                            </pre>
+                                                        </div>
+                                                        <div class="Model"></div>
+                                                    </div>
 
                                                 </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                    <div class="h5 bold">Authorization<sup class="sup-n">*
+                                                        required</sup></div>
+                                                    <div class="ita">(header)</div>
+                                                    <div class="h5 bold">Content-Type<sup class="sup-n">* required</sup>
+                                                    </div>
+                                                    <div class="ita">(header)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 bg-gray">
+                                                <div class="col-md-1 h4">Resopnses</div>
+                                                <div class="pull-right text-left row">
+                                                    Response content type
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                                data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
+                                                            application/json <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Action</a></li>
+                                                            <li role="separator" class="divider"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 borderb">
+                                                <div class="col-md-1 h5">Code</div>
+                                                <div class="col-md-2 col-md-offset-4 h5">Description</div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="col-md-5">200</div>
+                                                <div class="col-md-7"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -124,23 +173,6 @@
                             </div>
 
                         </div>
-                        <div class="panel-group" id="panelin1-2">
-                            <div class="panel panel-info">
-                                <div class="panel-heading" data-toggle="collapse" data-parent="panelin1-2" href="#item1in2">
-                                    <div class="panel-title">
-                                        <div class="col-md-1 text-center stitle">POST</div>
-                                        <div>/api/UserRegister 查询用户是否存在</div>
-                                    </div>
-                                </div>
-                                <div id="item1in2" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <div class="text-inden">hello_1</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -153,8 +185,7 @@
 </div>
 <script>
     $.getJSON("api.json", function (data) {
-        console.log(data);
-
+//        console.log(data);
         //info
         let name = document.getElementsByClassName("name")[0];
         name.innerHTML = " <div class=\"h1\">\n" +
@@ -176,51 +207,155 @@
         let main = document.getElementsByClassName("main")[0];
         let Lunit;
         let Sunit;
-        for (let i = 0; i <data.item.length-1; i++) {
-            Lunit=document.createElement("div");
-            Lunit.innerHTML = " <div class=\"row Lunit"+i+"\">\n" +
-                "        <div class=\"panel-group\" id=\"panelout"+
-                i+"\">\n" +
+        let resquestUl;
+        let resquestLi;
+        let Authorization;
+        let ContentType;
+        for (let i = 0; i < data.item.length - 1; i++) {
+            Lunit = document.createElement("div");
+            Lunit.className = "row Lunit";
+            Lunit.innerHTML =
+//                " <div class=\"row Lunit" + i + "\">\n" +
+                "        <div class=\"panel-group\" id=\"panelout" +
+                i + "\">\n" +
                 "            <div class=\"panel\">\n" +
-                "                <div class=\"panel-heading\" data-toggle=\"collapse\" data-parent=\"panelout"+
-                i+"\" href=\"#itemout"+
-                i+"\">\n" +
-                "                    <div class=\"panel-title\"><a href='#'>"+data.item[i].name+"</a></div>\n" +
+                "                <div class=\"panel-heading\" data-toggle=\"collapse\" data-parent=\"panelout" +
+                i + "\" href=\"#itemout" +
+                i + "\">\n" +
+                "                    <div class=\"panel-title\"><a href='#'>" + data.item[i].name + "</a></div>\n" +
                 "                </div>\n" +
-                "                <div id=\"itemout"+
-                i+"\" class=\"panel-collapse collapse in\">\n" +
-                "                    <div class=\"panel-body Sunit"+
-                i+"\">\n" +
+                "                <div id=\"itemout" +
+                i + "\" class=\"panel-collapse collapse in\">\n" +
+                "                    <div class=\"panel-body Sunit" +
+                i + "\">\n" +
                 "                       \n" +
                 "                    </div>\n" +
                 "                </div>\n" +
                 "            </div>\n" +
                 "\n" +
-                "        </div>\n" +
-                "    </div>"
+                "        </div>\n"
+//                "    </div>"
             ;
             main.appendChild(Lunit);
 
-            for (let j= 0;j<data.item[i].item.length;j++){
-                Sunit=document.createElement("div");
-                Sunit.innerHTML="<div class=\"panel-group\" id=\"panelin"+i+"-"+j+"\">\n" +
+            for (let j = 0; j < data.item[i].item.length; j++) {
+                Sunit = document.createElement("div");
+                Sunit.className = "panel-group";
+                Sunit.id = "panelin" + i + "-" + j;
+
+                resquestUl=document.createElement("ul");
+                if (data.item[i].item[j].request.description!=null) {
+                    let Li = data.item[i].item[j].request.description.split("*");
+                    for (let k=0;k<Li.length;k++){
+                        resquestLi=document.createElement("li");
+                        resquestLi.innerHTML=Li[k];
+                        resquestUl.appendChild(resquestLi);
+                    }
+                }else{}
+                //判定
+                    for (let x=0;x<data.item[i].item[j].request.header.length;x++){
+                        if(data.item[i].item[j].request.header[x].key=="Authorization"){
+                            Authorization=data.item[i].item[j].request.header[x].value;
+                        }
+                        if(data.item[i].item[j].request.header[x].key=="Content-Type"){
+                            ContentType=data.item[i].item[j].request.header[x].value;
+                        }
+
+                    }
+                //
+
+//                data.item[i].item[j].request.body.raw.replace(/1/,"\n");
+                Sunit.innerHTML =
+//                    "<div class=\"panel-group\" id=\"panelin" + i + "-" + j + "\">\n" +
                     "                            <div class=\"panel panel-info\">\n" +
-                    "                                <div class=\"panel-heading\" data-toggle=\"collapse\" data-parent=\"panelin"+i+"-"+j+"\" href=\"#item"+i+"in"+j+"\">\n" +
+                    "                                <div class=\"panel-heading\" data-toggle=\"collapse\" data-parent=\"panelin" + i + "-" + j + "\" href=\"#item" + i + "in" + j + "\">\n" +
                     "                                    <div class=\"panel-title\">\n" +
-                    "                                        <div class=\"col-md-2 text-center stitle\">"+data.item[i].item[j].name+"</div>\n" +
-                    "                                        <div>/api/UserRegister 查询用户是否存在</div>\n" +
+                    "                                        <div class=\"col-md-2 text-center stitle\">" + data.item[i].item[j].request.method + "</div>\n" +
+                    "                                        <div>" + data.item[i].item[j].name + "</div>\n" +
                     "                                    </div>\n" +
                     "                                </div>\n" +
-                    "                                <div id=\"item"+i+"in"+j+"\" class=\"panel-collapse collapse in\">\n" +
+                    "                                <div id=\"item" + i + "in" + j + "\" class=\"panel-collapse collapse in\">\n" +
                     "                                    <div class=\"panel-body\">\n" +
-                    "                                        <div class=\"text-inden\">hello</div>\n" +
+                        "<div class=\"XSunit\">\n" +
+                    "                                            <div class=\"col-md-12 h4\">"+resquestUl.innerHTML+"</div>\n" +
+                    "                                            <div class=\"col-md-12 bg-gray\">\n" +
+                    "                                                <div class=\"col-md-1 h4\">Parameters</div>\n" +
+                    "                                                <div class=\"col-md-1 pull-right\">\n" +
+                    "                                                    <div class=\"btn\">Try it out</div>\n" +
+                    "                                                </div>\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12 borderb\">\n" +
+                    "                                                <div class=\"col-md-1 h5\">Name</div>\n" +
+                    "                                                <div class=\"col-md-2 col-md-offset-4 h5\">Description</div>\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12\">\n" +
+                    "                                                <div class=\"col-md-5\">\n" +
+                    "                                                    <div class=\"h5 bold\">Body<sup class=\"sup-n\">* required</sup></div>\n" +
+                    "                                                    <div class=\"ita\">(body)</div>\n" +
+                    "                                                </div>\n" +
+                    "                                                <div class=\"col-md-7\">\n" +
+                    "                                                    <br/>\n" +
+                    "                                                    <div>\n" +
+                    "                                                        <ul class=\"nav nav-pills\">\n" +
+                    "                                                            <li role=\"presentation\"><a href=\"#\">Example Value</a></li>\n" +
+                    "                                                            <li role=\"presentation\"><a href=\"#\">Model</a></li>\n" +
+                    "                                                        </ul>\n" +
+                    "                                                          <div class=\"ExampleValue\">\n" +
+                    "                                                            <samp>\n" +
+                    "                                                                "+data.item[i].item[j].request.body.raw+"\n" +
+                    "                                                            </samp>\n" +
+                    "                                                        </div>"+
+                    "                                                    </div>\n" +
+                    "\n" +
+                    "                                                </div>\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12\">\n" +
+                    "                                                <div class=\"col-md-5\">\n" +
+                    "                                                    <div class=\"h5 bold\">Authorization<sup class=\"sup-n\">*\n" +
+                    "                                                        required</sup></div>\n" +
+                    "                                                    <div class=\"ita\">"+Authorization+"</div>\n" +
+                    "                                                    <div class=\"h5 bold\">Content-Type<sup class=\"sup-n\">* required</sup>\n" +
+                    "                                                    </div>\n" +
+                    "                                                    <div class=\"ita\">"+ContentType+"</div>\n" +
+                    "                                                </div>\n" +
+                    "                                                <div class=\"col-md-7\">\n" +
+                    "                                                </div\">\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12 bg-gray\">\n" +
+                    "                                                <div class=\"col-md-1 h4\">Resopnses</div>\n" +
+                    "                                                <div class=\"pull-right text-left row\">\n" +
+                    "                                                    Response content type\n" +
+                    "                                                    <div class=\"btn-group\">\n" +
+                    "                                                        <button type=\"button\" class=\"btn btn-default dropdown-toggle\"\n" +
+                    "                                                                data-toggle=\"dropdown\"\n" +
+                    "                                                                aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
+                    "                                                            application/json <span class=\"caret\"></span></button>\n" +
+                    "                                                        <ul class=\"dropdown-menu\">\n" +
+                    "                                                            <li><a href=\"#\">application/json</a></li>\n" +
+                    "                                                            <li role=\"separator\" class=\"divider\"></li>\n" +
+                    "                                                        </ul>\n" +
+                    "                                                    </div>\n" +
+                    "                                                </div>\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12 borderb\">\n" +
+                    "                                                <div class=\"col-md-1 h5\">Code</div>\n" +
+                    "                                                <div class=\"col-md-2 col-md-offset-4 h5\">Description</div>\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"col-md-12\">\n" +
+                    "                                                <div class=\"col-md-5\">200</div>\n" +
+                    "                                                <div class=\"col-md-7\"></div>\n" +
+                    "                                            </div>\n" +
+                    "                                        </div>"
+//                    "                                        <div class=\"text-inden\">hello</div>\n" +
                     "                                    </div>\n" +
                     "                                </div>\n" +
                     "                            </div>\n" +
-                    "\n" +
-                    "                        </div>"
+                    "\n"
+//                    "                        </div>"
                 ;
-                document.getElementsByClassName("Sunit"+i)[0].appendChild(Sunit);
+                document.getElementsByClassName("Sunit" + i)[0].appendChild(Sunit);
+
+
             }
 
         }
